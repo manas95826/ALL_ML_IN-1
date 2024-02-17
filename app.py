@@ -10,7 +10,7 @@ from sklearn.ensemble import RandomForestRegressor
 from sklearn.naive_bayes import GaussianNB
 
 # Load the dataset
-df = pd.read_csv("Clean_Dataset.csv\Clean_Dataset.csv", nrows=5000)
+df = pd.read_csv("Clean_Dataset.csv", nrows=5000)
 columns_to_drop = ['Unnamed: 0', 'flight']
 df = df.drop(columns=columns_to_drop)
 df = df.dropna()
